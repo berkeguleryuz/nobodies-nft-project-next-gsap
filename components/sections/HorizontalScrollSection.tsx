@@ -32,7 +32,6 @@ export default function HorizontalScrollSection() {
         },
       });
 
-      // Only simple fade animation for titles
       sections.forEach((section) => {
         const sectionElement = section as HTMLElement;
         const title = sectionElement.querySelector(".panel-title");
@@ -92,21 +91,13 @@ export default function HorizontalScrollSection() {
                 />
                 <div className="absolute inset-0" />
 
-                {/* <div className="absolute inset-0 text-black opacity-20">
-                  <CyberGrid size={320} />
-                </div> */}
-
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="cyber-card p-3 relative">
                     <span className="text-small font-orbitron">ENTITY_001</span>
-                    {/* <div className="absolute top-1 right-1 text-black opacity-30">
-                      <CyberGlitch size={20} />
-                    </div> */}
                   </div>
                 </div>
               </div>
 
-              {/* Floating vector element with SVG integration */}
               <div className="panel-image absolute top-1/4 right-1/4 w-24 h-24 opacity-60">
                 <Image
                   src="/no1s/vector-item.svg"
@@ -114,10 +105,6 @@ export default function HorizontalScrollSection() {
                   fill
                   className="object-contain"
                 />
-                {/* SVG frame around vector */}
-                {/* <div className="absolute inset-0 text-black opacity-40">
-                  <CyberOrb size={96} />
-                </div> */}
               </div>
             </div>
 
@@ -198,16 +185,9 @@ export default function HorizontalScrollSection() {
                 />
                 <div className="absolute inset-0" />
 
-                {/* <div className="absolute inset-0 text-black opacity-20">
-                  <CyberGrid size={320} />
-                </div> */}
-
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="cyber-card p-3 relative">
-                    <span className="text-small font-orbitron">ENTITY_001</span>
-                    {/* <div className="absolute top-1 right-1 text-black opacity-30">
-                      <CyberGlitch size={20} />
-                    </div> */}
+                    <span className="text-small font-orbitron">ENTITY_002</span>
                   </div>
                 </div>
               </div>
@@ -219,9 +199,6 @@ export default function HorizontalScrollSection() {
                   fill
                   className="object-contain"
                 />
-                {/* <div className="absolute inset-0 text-black opacity-40">
-                  <CyberOrb size={96} />
-                </div> */}
               </div>
             </div>
 
@@ -302,16 +279,9 @@ export default function HorizontalScrollSection() {
                 />
                 <div className="absolute inset-0" />
 
-                {/* <div className="absolute inset-0 text-black opacity-20">
-                  <CyberGrid size={320} />
-                </div> */}
-
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="cyber-card p-3 relative">
-                    <span className="text-small font-orbitron">ENTITY_001</span>
-                    {/* <div className="absolute top-1 right-1 text-black opacity-30">
-                      <CyberGlitch size={20} />
-                    </div> */}
+                    <span className="text-small font-orbitron">ENTITY_003</span>
                   </div>
                 </div>
               </div>
@@ -323,9 +293,6 @@ export default function HorizontalScrollSection() {
                   fill
                   className="object-contain"
                 />
-                {/* <div className="absolute inset-0 text-black opacity-40">
-                  <CyberOrb size={96} />
-                </div> */}
               </div>
             </div>
 
