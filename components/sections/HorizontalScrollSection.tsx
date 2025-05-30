@@ -22,49 +22,36 @@ export default function HorizontalScrollSection() {
         scrollTrigger: {
           trigger: sectionRef.current,
           pin: true,
-          scrub: 0.5,
+          scrub: 2,
           end: () => "+=" + window.innerWidth * 3,
           anticipatePin: 1,
           refreshPriority: -1,
           invalidateOnRefresh: true,
           pinSpacing: true,
+          fastScrollEnd: true,
           id: "horizontal-scroll",
         },
       });
+      
       panels.forEach((panel) => {
         const panelElement = panel as HTMLElement;
         const title = panelElement.querySelector(".panel-title");
-        const infoCard = panelElement.querySelector(".info-card");
 
-        gsap.from(title, {
-          y: 100,
-          opacity: 0,
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: panelElement,
-            start: "left 80%",
-            end: "left 20%",
-            scrub: true,
-            containerAnimation: gsap.getById("horizontal-scroll"),
-          },
-        });
-
-        gsap.from(infoCard, {
-          y: 80,
-          opacity: 0,
-          duration: 1.2,
-          delay: 0.3,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: panelElement,
-            start: "left 70%",
-            end: "left 30%",
-            scrub: true,
-            containerAnimation: gsap.getById("horizontal-scroll"),
-          },
-        });
-
+        if (title) {
+          gsap.from(title, {
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: panelElement,
+              start: "left 60%",
+              end: "left 40%",
+              scrub: 1,
+              containerAnimation: gsap.getById("horizontal-scroll"),
+            },
+          });
+        }
       });
     }, sectionRef);
 

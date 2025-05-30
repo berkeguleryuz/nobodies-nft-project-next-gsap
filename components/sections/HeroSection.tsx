@@ -171,7 +171,6 @@ export default function HeroSection() {
           the void hums. do you?
         </p>
 
-        {/* Additional visual elements */}
         <div className="mt-12 flex justify-center space-x-8">
           <div className="text-black opacity-60">
             <CyberOrb size={40} />
@@ -185,7 +184,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-black/50 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-black/50 rounded-full mt-2 animate-pulse"/>

@@ -26,13 +26,11 @@ export default function ScrollIndicator() {
 
   return (
     <>
-      {/* Top Progress Bar */}
       <div 
         className="scroll-indicator"
         style={{ '--scroll-progress': `${scrollProgress}%` } as React.CSSProperties}
       />
       
-      {/* Scroll Hint */}
       {showScrollHint && (
         <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 animate-fade-in-up">
           <div className="text-center cyber-card p-6">
