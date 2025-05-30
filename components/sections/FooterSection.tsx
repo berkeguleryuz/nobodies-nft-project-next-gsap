@@ -11,7 +11,7 @@ export default function FooterSection() {
         <p className="text-3xl -mt-2 italic text-black">
           From nothing. 
         </p>
-        <p className="my-4">Built with ❤️ by <Link target="_blank" href="https://www.clodron.com" className="text-black font-bold">Clodron</Link></p>
+        <p className="mt-4">Built with ❤️ by <Link target="_blank" href="https://www.clodron.com" className="text-black font-bold">Clodron</Link></p>
       </div>
     </footer>
   );
