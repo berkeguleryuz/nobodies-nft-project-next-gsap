@@ -43,6 +43,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 body {
@@ -773,4 +774,23 @@ strong {
 #horizontal-scroll .cyber-card,
 #horizontal-scroll .image-container {
   transition-duration: 0.1s !important;
+}
+
+/* Horizontal scroll performance optimizations */
+.horizontal-scroll-container {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+/* Optimize scroll panels */
+.scroll-panel {
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  contain: layout style paint;
 }

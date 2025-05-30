@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { CyberGrid, CyberOrb, CyberGlitch } from "@/components/SVGElements";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,41 +13,41 @@ export default function HorizontalScrollSection() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const panels = gsap.utils.toArray(".scroll-panel");
+      const sections = gsap.utils.toArray(".scroll-panel");
 
-      gsap.to(panels, {
-        xPercent: -100 * (panels.length - 1),
+      gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
         ease: "none",
         scrollTrigger: {
           trigger: sectionRef.current,
           pin: true,
           scrub: 2,
-          end: () => "+=" + window.innerWidth * 3,
+          end: () =>
+            "+=" + (containerRef.current?.offsetWidth || window.innerWidth * 3),
           anticipatePin: 1,
           refreshPriority: -1,
           invalidateOnRefresh: true,
           pinSpacing: true,
-          fastScrollEnd: true,
-          id: "horizontal-scroll",
+          id: "main-horizontal-scroll",
         },
       });
-      
-      panels.forEach((panel) => {
-        const panelElement = panel as HTMLElement;
-        const title = panelElement.querySelector(".panel-title");
+
+      // Only simple fade animation for titles
+      sections.forEach((section) => {
+        const sectionElement = section as HTMLElement;
+        const title = sectionElement.querySelector(".panel-title");
 
         if (title) {
           gsap.from(title, {
-            y: 30,
             opacity: 0,
-            duration: 0.8,
+            duration: 0.5,
             ease: "power2.out",
             scrollTrigger: {
-              trigger: panelElement,
-              start: "left 60%",
-              end: "left 40%",
-              scrub: 1,
-              containerAnimation: gsap.getById("horizontal-scroll"),
+              trigger: sectionElement,
+              start: "left 70%",
+              end: "left 30%",
+              scrub: 0.5,
+              containerAnimation: gsap.getById("main-horizontal-scroll"),
             },
           });
         }
@@ -70,7 +69,7 @@ export default function HorizontalScrollSection() {
       }}>
       <div
         ref={containerRef}
-        className="flex w-[300vw] h-full"
+        className="flex w-[300vw] h-full horizontal-scroll-container"
         id="horizontal-scroll"
         style={{
           transform: "translate3d(0, 0, 0)",
@@ -91,18 +90,18 @@ export default function HorizontalScrollSection() {
                   fill
                   className="object-cover transition-all duration-700"
                 />
-                <div className="absolute inset-0"/>
+                <div className="absolute inset-0" />
 
-                <div className="absolute inset-0 text-black opacity-20">
+                {/* <div className="absolute inset-0 text-black opacity-20">
                   <CyberGrid size={320} />
-                </div>
+                </div> */}
 
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="cyber-card p-3 relative">
                     <span className="text-small font-orbitron">ENTITY_001</span>
-                    <div className="absolute top-1 right-1 text-black opacity-30">
+                    {/* <div className="absolute top-1 right-1 text-black opacity-30">
                       <CyberGlitch size={20} />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -116,9 +115,9 @@ export default function HorizontalScrollSection() {
                   className="object-contain"
                 />
                 {/* SVG frame around vector */}
-                <div className="absolute inset-0 text-black opacity-40">
+                {/* <div className="absolute inset-0 text-black opacity-40">
                   <CyberOrb size={96} />
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -130,7 +129,7 @@ export default function HorizontalScrollSection() {
               <div className="info-card cyber-card p-8 space-y-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse"/>
+                    <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse" />
                     <span className="text-small font-orbitron uppercase tracking-wider text-black-force">
                       STATUS: AWAKENING
                     </span>
@@ -161,7 +160,8 @@ export default function HorizontalScrollSection() {
                   <div className="w-full bg-black/20 rounded-full h-2">
                     <div
                       className="bg-gradient-to-r from-black to-gray-500 h-2 rounded-full"
-                      style={{ width: "47%" }}/>
+                      style={{ width: "47%" }}
+                    />
                   </div>
                 </div>
 
@@ -175,7 +175,8 @@ export default function HorizontalScrollSection() {
                   <div className="w-full bg-black/20 rounded-full h-2">
                     <div
                       className="bg-black h-2 rounded-full animate-pulse"
-                      style={{ width: "60%" }}/>
+                      style={{ width: "60%" }}
+                    />
                   </div>
                 </div>
               </div>
@@ -184,7 +185,7 @@ export default function HorizontalScrollSection() {
         </div>
 
         <div className="scroll-panel w-screen h-screen relative flex items-center justify-center">
-          <div className="absolute inset-0"/>
+          <div className="absolute inset-0" />
 
           <div className="relative z-10 w-full max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-full flex items-center justify-center">
@@ -195,18 +196,18 @@ export default function HorizontalScrollSection() {
                   fill
                   className="object-cover transition-all duration-700"
                 />
-                <div className="absolute inset-0"/>
+                <div className="absolute inset-0" />
 
-                <div className="absolute inset-0 text-black opacity-20">
+                {/* <div className="absolute inset-0 text-black opacity-20">
                   <CyberGrid size={320} />
-                </div>
+                </div> */}
 
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="cyber-card p-3 relative">
                     <span className="text-small font-orbitron">ENTITY_001</span>
-                    <div className="absolute top-1 right-1 text-black opacity-30">
+                    {/* <div className="absolute top-1 right-1 text-black opacity-30">
                       <CyberGlitch size={20} />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -218,9 +219,9 @@ export default function HorizontalScrollSection() {
                   fill
                   className="object-contain"
                 />
-                <div className="absolute inset-0 text-black opacity-40">
+                {/* <div className="absolute inset-0 text-black opacity-40">
                   <CyberOrb size={96} />
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -232,7 +233,7 @@ export default function HorizontalScrollSection() {
               <div className="info-card cyber-card p-8 space-y-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse"/>
+                    <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse" />
                     <span className="text-small font-orbitron uppercase tracking-wider text-black-force">
                       STATUS: AWAKENING
                     </span>
@@ -263,7 +264,8 @@ export default function HorizontalScrollSection() {
                   <div className="w-full bg-black/20 rounded-full h-2">
                     <div
                       className="bg-gradient-to-r from-black to-gray-500 h-2 rounded-full"
-                      style={{ width: "47%" }}/>
+                      style={{ width: "47%" }}
+                    />
                   </div>
                 </div>
 
@@ -277,7 +279,8 @@ export default function HorizontalScrollSection() {
                   <div className="w-full bg-black/20 rounded-full h-2">
                     <div
                       className="bg-black h-2 rounded-full animate-pulse"
-                      style={{ width: "60%" }}/>
+                      style={{ width: "60%" }}
+                    />
                   </div>
                 </div>
               </div>
@@ -286,7 +289,7 @@ export default function HorizontalScrollSection() {
         </div>
 
         <div className="scroll-panel w-screen h-screen relative flex items-center justify-center">
-          <div className="absolute inset-0"/>
+          <div className="absolute inset-0" />
 
           <div className="relative z-10 w-full max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-full flex items-center justify-center">
@@ -297,18 +300,18 @@ export default function HorizontalScrollSection() {
                   fill
                   className="object-cover transition-all duration-700"
                 />
-                <div className="absolute inset-0"/>
+                <div className="absolute inset-0" />
 
-                <div className="absolute inset-0 text-black opacity-20">
+                {/* <div className="absolute inset-0 text-black opacity-20">
                   <CyberGrid size={320} />
-                </div>
+                </div> */}
 
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="cyber-card p-3 relative">
                     <span className="text-small font-orbitron">ENTITY_001</span>
-                    <div className="absolute top-1 right-1 text-black opacity-30">
+                    {/* <div className="absolute top-1 right-1 text-black opacity-30">
                       <CyberGlitch size={20} />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -320,9 +323,9 @@ export default function HorizontalScrollSection() {
                   fill
                   className="object-contain"
                 />
-                <div className="absolute inset-0 text-black opacity-40">
+                {/* <div className="absolute inset-0 text-black opacity-40">
                   <CyberOrb size={96} />
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -334,7 +337,7 @@ export default function HorizontalScrollSection() {
               <div className="info-card cyber-card p-8 space-y-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse"/>
+                    <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse" />
                     <span className="text-small font-orbitron uppercase tracking-wider text-black-force">
                       STATUS: AWAKENING
                     </span>
@@ -365,7 +368,8 @@ export default function HorizontalScrollSection() {
                   <div className="w-full bg-black/20 rounded-full h-2">
                     <div
                       className="bg-gradient-to-r from-black to-gray-500 h-2 rounded-full"
-                      style={{ width: "47%" }}/>
+                      style={{ width: "47%" }}
+                    />
                   </div>
                 </div>
 
@@ -379,7 +383,8 @@ export default function HorizontalScrollSection() {
                   <div className="w-full bg-black/20 rounded-full h-2">
                     <div
                       className="bg-black h-2 rounded-full animate-pulse"
-                      style={{ width: "60%" }}/>
+                      style={{ width: "60%" }}
+                    />
                   </div>
                 </div>
               </div>
