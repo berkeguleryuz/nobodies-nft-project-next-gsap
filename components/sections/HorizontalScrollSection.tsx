@@ -113,15 +113,15 @@ export default function HorizontalScrollSection() {
                 REMEMBERED
               </h3>
 
-              <div className="info-card cyber-card p-8 space-y-6">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center space-x-3">
+              <div className="info-card cyber-card p-8 space-y-4">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center space-x-2">
                     <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse" />
                     <span className="text-small font-orbitron uppercase tracking-wider text-black-force">
                       STATUS: AWAKENING
                     </span>
                   </div>
-                  <div className="w-12 h-12 image-container">
+                  <div className="w-10 h-10 image-container">
                     <Image
                       src="/no1s/logo.jpg"
                       alt="Status Icon"
@@ -131,37 +131,37 @@ export default function HorizontalScrollSection() {
                   </div>
                 </div>
 
-                <p className="text-medium leading-relaxed text-dark-gray-force">
+                <p className="text-sm leading-relaxed text-dark-gray-force">
                   Emerging from the void with purpose, these entities begin to
                   form coherent patterns. Memory fragments coalesce into
                   something resembling identity.
                 </p>
 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-small font-orbitron text-black-force">
+                    <span className="text-xs font-orbitron text-black-force">
                       COHERENCE
                     </span>
-                    <span className="text-small text-black-force">47%</span>
+                    <span className="text-xs text-black-force">47%</span>
                   </div>
-                  <div className="w-full bg-black/20 rounded-full h-2">
+                  <div className="w-full bg-black/20 rounded-full h-1.5">
                     <div
-                      className="bg-gradient-to-r from-black to-gray-500 h-2 rounded-full"
+                      className="bg-gradient-to-r from-black to-gray-500 h-1.5 rounded-full"
                       style={{ width: "47%" }}
                     />
                   </div>
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-small font-orbitron text-black-force">
+                    <span className="text-xs font-orbitron text-black-force">
                       IDENTITY STRENGTH
                     </span>
-                    <span className="text-small text-black-force">FORMING</span>
+                    <span className="text-xs text-black-force">FORMING</span>
                   </div>
-                  <div className="w-full bg-black/20 rounded-full h-2">
+                  <div className="w-full bg-black/20 rounded-full h-1.5">
                     <div
-                      className="bg-black h-2 rounded-full animate-pulse"
+                      className="bg-black h-1.5 rounded-full animate-pulse"
                       style={{ width: "60%" }}
                     />
                   </div>
@@ -207,15 +207,15 @@ export default function HorizontalScrollSection() {
                 REMEMBERED
               </h3>
 
-              <div className="info-card cyber-card p-8 space-y-6">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center space-x-3">
+              <div className="info-card cyber-card p-8 space-y-4">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center space-x-2">
                     <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse" />
                     <span className="text-small font-orbitron uppercase tracking-wider text-black-force">
                       STATUS: AWAKENING
                     </span>
                   </div>
-                  <div className="w-12 h-12 image-container">
+                  <div className="w-10 h-10 image-container">
                     <Image
                       src="/no1s/logo.jpg"
                       alt="Status Icon"
@@ -225,37 +225,37 @@ export default function HorizontalScrollSection() {
                   </div>
                 </div>
 
-                <p className="text-medium leading-relaxed text-dark-gray-force">
+                <p className="text-sm leading-relaxed text-dark-gray-force">
                   Emerging from the void with purpose, these entities begin to
                   form coherent patterns. Memory fragments coalesce into
                   something resembling identity.
                 </p>
 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-small font-orbitron text-black-force">
+                    <span className="text-xs font-orbitron text-black-force">
                       COHERENCE
                     </span>
-                    <span className="text-small text-black-force">47%</span>
+                    <span className="text-xs text-black-force">47%</span>
                   </div>
-                  <div className="w-full bg-black/20 rounded-full h-2">
+                  <div className="w-full bg-black/20 rounded-full h-1.5">
                     <div
-                      className="bg-gradient-to-r from-black to-gray-500 h-2 rounded-full"
+                      className="bg-gradient-to-r from-black to-gray-500 h-1.5 rounded-full"
                       style={{ width: "47%" }}
                     />
                   </div>
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-small font-orbitron text-black-force">
+                    <span className="text-xs font-orbitron text-black-force">
                       IDENTITY STRENGTH
                     </span>
-                    <span className="text-small text-black-force">FORMING</span>
+                    <span className="text-xs text-black-force">FORMING</span>
                   </div>
-                  <div className="w-full bg-black/20 rounded-full h-2">
+                  <div className="w-full bg-black/20 rounded-full h-1.5">
                     <div
-                      className="bg-black h-2 rounded-full animate-pulse"
+                      className="bg-black h-1.5 rounded-full animate-pulse"
                       style={{ width: "60%" }}
                     />
                   </div>
@@ -301,15 +301,15 @@ export default function HorizontalScrollSection() {
                 REMEMBERED
               </h3>
 
-              <div className="info-card cyber-card p-8 space-y-6">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center space-x-3">
+              <div className="info-card cyber-card p-8 space-y-4">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center space-x-2">
                     <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse" />
                     <span className="text-small font-orbitron uppercase tracking-wider text-black-force">
                       STATUS: AWAKENING
                     </span>
                   </div>
-                  <div className="w-12 h-12 image-container">
+                  <div className="w-10 h-10 image-container">
                     <Image
                       src="/no1s/logo.jpg"
                       alt="Status Icon"
@@ -319,37 +319,37 @@ export default function HorizontalScrollSection() {
                   </div>
                 </div>
 
-                <p className="text-medium leading-relaxed text-dark-gray-force">
+                <p className="text-sm leading-relaxed text-dark-gray-force">
                   Emerging from the void with purpose, these entities begin to
                   form coherent patterns. Memory fragments coalesce into
                   something resembling identity.
                 </p>
 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-small font-orbitron text-black-force">
+                    <span className="text-xs font-orbitron text-black-force">
                       COHERENCE
                     </span>
-                    <span className="text-small text-black-force">47%</span>
+                    <span className="text-xs text-black-force">47%</span>
                   </div>
-                  <div className="w-full bg-black/20 rounded-full h-2">
+                  <div className="w-full bg-black/20 rounded-full h-1.5">
                     <div
-                      className="bg-gradient-to-r from-black to-gray-500 h-2 rounded-full"
+                      className="bg-gradient-to-r from-black to-gray-500 h-1.5 rounded-full"
                       style={{ width: "47%" }}
                     />
                   </div>
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-small font-orbitron text-black-force">
+                    <span className="text-xs font-orbitron text-black-force">
                       IDENTITY STRENGTH
                     </span>
-                    <span className="text-small text-black-force">FORMING</span>
+                    <span className="text-xs text-black-force">FORMING</span>
                   </div>
-                  <div className="w-full bg-black/20 rounded-full h-2">
+                  <div className="w-full bg-black/20 rounded-full h-1.5">
                     <div
-                      className="bg-black h-2 rounded-full animate-pulse"
+                      className="bg-black h-1.5 rounded-full animate-pulse"
                       style={{ width: "60%" }}
                     />
                   </div>

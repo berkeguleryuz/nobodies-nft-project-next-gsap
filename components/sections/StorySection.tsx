@@ -117,21 +117,21 @@ export default function StorySection() {
           </div>
         </div>
 
-        <div className="text-center mt-24 mb-12">
+        <div className="text-center mt-24 mb-12 bg-neutral-950 rounded-xl p-16">
           <h3 className="text-large font-bold text-white mb-3 font-orbitron">
             STORY
           </h3>
-          <p className="text-neutral-200 text-base font-iceland max-w-2xl mx-auto">
+          <p className="text-neutral-200 text-3xl font-iceland max-w-4xl mx-auto">
             They were always there—unseen, unremembered, slipping through the
             cracks of the world. Until one day, the shadows began to whisper
             back. Nobodies are the forgotten, the blank slates, the ones who
             exist between the lines. Now, they&apos;re stepping into the light.
             Not as heroes. Not as villains. As something else.
           </p>
-          <p className=" mt-4 text-orange-400 text-large font-iceland max-w-2xl mx-auto">
+          <p className=" mt-16 text-orange-400 text-large font-iceland max-w-2xl mx-auto">
             Your key waits. Will you turn it?
           </p>
-          <div className="flex items-center justify-center mt-4">
+          <div className="flex items-center justify-center mt-8">
             <StarButton />
           </div>
         </div>
