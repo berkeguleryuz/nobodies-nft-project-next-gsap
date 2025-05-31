@@ -5,24 +5,26 @@ import Link from "next/link";
 
 export default function BridgeSection() {
   return (
-    <section
-      className="relative pt-32 px-8 overflow-hidden min-h-screen flex items-center justify-center">
+    <section className="relative pt-32 px-8 overflow-hidden min-h-screen flex items-center justify-center">
       <div className="bridge-bg absolute inset-0 opacity-20">
-        <div className="absolute inset-0 "/>
+        <div className="absolute inset-0 " />
       </div>
 
-      <Image 
+      <Image
         src="/no1s/photo4.jpg"
         alt="Bridge Section"
         fill
         className="object-cover opacity-20"
+        draggable={false}
+        onContextMenu={(e) => e.preventDefault()}
+        onDragStart={(e) => e.preventDefault()}
+        style={{ userSelect: "none", pointerEvents: "none" }}
       />
 
-      <div
-        className="max-w-4xl mx-auto text-center relative z-10">
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="bridge-item text-huge font-orbitron relative text-black-force">
           Join the Circle
-          <div className="absolute -bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] h-1 bg-black opacity-40"/>
+          <div className="absolute -bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] h-1 bg-black opacity-40" />
         </h2>
 
         <p className="bridge-item text-2xl italic max-w-5xl mx-auto leading-relaxed text-dark-gray-force">

@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import Image from "next/image";
 
-
 export default function VoidSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -14,8 +13,6 @@ export default function VoidSection() {
       ref={sectionRef}
       id="void"
       className="relative bg-neutral-950 text-white py-20 px-8 overflow-hidden min-h-screen flex flex-col items-center">
-
-
       <div className="void-bg absolute inset-0 opacity-30">
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="absolute top-1/4 left-1/6 w-32 h-32 opacity-20">
@@ -43,7 +40,7 @@ export default function VoidSection() {
         className="max-w-4xl mx-auto text-center relative z-10 flex-1 flex flex-col justify-center">
         <h2 className="text-large font-orbitron mb-20 relative text-white">
           The Void Chamber
-          <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-gradient-to-r from-transparent via-white to-transparent opacity-50"/>
+          <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-gradient-to-r from-transparent via-white to-transparent opacity-50" />
         </h2>
 
         <div className="space-y-12">
@@ -66,7 +63,7 @@ export default function VoidSection() {
 
         <div className="mt-24 relative">
           <div ref={symbolRef} className="relative w-48 h-48 mx-auto">
-            <div className="void-glow absolute inset-0 bg-gradient-radial from-white/20 via-white/10 to-transparent rounded-full"/>
+            <div className="void-glow absolute inset-0 bg-gradient-radial from-white/20 via-white/10 to-transparent rounded-full" />
 
             <div className="image-container w-full h-full">
               <Image
@@ -78,18 +75,20 @@ export default function VoidSection() {
               />
             </div>
 
-            <div className="absolute inset-0 animate-spin" style={{ animationDuration: "25s" }}>
+            <div
+              className="absolute inset-0 animate-spin"
+              style={{ animationDuration: "25s" }}>
               <div className="absolute top-0 left-1/2 w-4 h-4 transform -translate-x-1/2 animate-ping">
-                <div className="w-full h-full bg-white rounded-full opacity-40"/>
+                <div className="w-full h-full bg-white rounded-full opacity-40" />
               </div>
               <div className="absolute bottom-0 left-1/2 w-3 h-3 transform -translate-x-1/2 animate-pulse">
-                <div className="w-full h-full bg-white rounded-full opacity-30"/>
+                <div className="w-full h-full bg-white rounded-full opacity-30" />
               </div>
               <div className="absolute left-0 top-1/2 w-2 h-2 transform -translate-y-1/2 animate-bounce">
-                <div className="w-full h-full bg-white rounded-full opacity-25"/>
+                <div className="w-full h-full bg-white rounded-full opacity-25" />
               </div>
               <div className="absolute right-0 top-1/2 w-2 h-2 transform -translate-y-1/2 animate-pulse">
-                <div className="w-full h-full bg-white rounded-full opacity-25"/>
+                <div className="w-full h-full bg-white rounded-full opacity-25" />
               </div>
             </div>
           </div>
