@@ -2,9 +2,8 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
-export default function VoidSection() {
+export default function VoidArea() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const symbolRef = useRef<HTMLDivElement>(null);
@@ -39,10 +38,28 @@ export default function VoidSection() {
       <div
         ref={contentRef}
         className="max-w-4xl mx-auto text-center relative z-10 flex-1 flex flex-col justify-center">
-        <h2 className="text-large font-orbitron relative text-white">
+        <h2 className="text-large font-orbitron mb-20 relative text-white">
           The Void Chamber
           <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-gradient-to-r from-transparent via-white to-transparent opacity-50" />
         </h2>
+
+        <div className="space-y-12">
+          <p className="text-3xl font-orbitron font-bold text-white">
+            Silence gathers here.
+          </p>
+
+          <p className="text-xl font-rajdhani text-white">
+            A hollow space, waiting to be filled.
+          </p>
+
+          <p className="text-base font-rajdhani text-white">
+            You are early. Too early.
+          </p>
+
+          <p className="text-base italic font-rajdhani opacity-60 text-white">
+            Return when the shadows align.
+          </p>
+        </div>
 
         <div className="mt-24 relative">
           <div ref={symbolRef} className="relative w-48 h-48 mx-auto">
@@ -75,16 +92,6 @@ export default function VoidSection() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="mt-16 void-text">
-          <Link
-            href={"http://localhost:3000/the_void_chamber"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-5xl btn-cyber border p-4 rounded-lg transition-all duration-300 opacity-50 italic font-rajdhani text-white! cursor-pointer hover:text-black!">
-            Explore
-          </Link>
         </div>
       </div>
     </section>
