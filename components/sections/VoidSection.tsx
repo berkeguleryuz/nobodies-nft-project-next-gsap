@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function VoidSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -95,9 +96,13 @@ export default function VoidSection() {
         </div>
 
         <div className="mt-16 void-text">
-          <p className="text-5xl opacity-50 italic font-rajdhani text-white">
-            The void sees you. Do you see the void?
-          </p>
+          <Link
+            href={"https://nobodies.com/the-void-chamber"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-5xl btn-cyber border p-4 rounded-lg transition-all duration-300 opacity-50 italic font-rajdhani text-white! cursor-pointer hover:text-black!">
+            Explore
+          </Link>
         </div>
       </div>
     </section>

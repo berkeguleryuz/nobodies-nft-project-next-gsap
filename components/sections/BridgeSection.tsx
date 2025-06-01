@@ -38,7 +38,7 @@ export default function BridgeSection() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-cyber mt-12 px-12 py-6 text-large inline-block">
-            Bridge Now
+            Enter The Gate
           </Link>
         </div>
         <p className="bridge-item text-small mt-12 opacity-60 italic font-rajdhani text-dark-gray-force">

@@ -11,6 +11,7 @@ import BridgeSection from "@/components/sections/BridgeSection";
 import VoidSection from "@/components/sections/VoidSection";
 import FooterSection from "@/components/sections/FooterSection";
 import FluidCursor from "@/components/Cursor";
+import Navbar from "@/components/Navbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,6 +28,7 @@ export default function Home() {
 
   return (
     <main className="noise-bg relative">
+      <Navbar />
       <div className="relative z-10">
         <HeroSection />
         <StorySection />

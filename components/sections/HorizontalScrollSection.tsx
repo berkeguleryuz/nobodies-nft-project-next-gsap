@@ -110,7 +110,7 @@ export default function HorizontalScrollSection() {
 
             <div className="space-y-8">
               <h3 className="panel-title text-huge font-orbitron text-gradient-cyber">
-                REMEMBERED
+                The 1/1 Hall
               </h3>
 
               <div className="info-card cyber-card p-8 space-y-4">
@@ -178,7 +178,7 @@ export default function HorizontalScrollSection() {
             <div className="relative h-full flex items-center justify-center">
               <div className="panel-image image-container w-80 h-96 relative">
                 <Image
-                  src="/no1s/photo1.jpg"
+                  src="/no1s/photo5.jpg"
                   alt="Forgotten Entity"
                   fill
                   className="object-cover transition-all duration-700"
@@ -187,7 +187,7 @@ export default function HorizontalScrollSection() {
 
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="cyber-card p-3 relative">
-                    <span className="text-small font-orbitron">ENTITY_002</span>
+                    <span className="text-small text-white/50! font-orbitron">ENTITY_002</span>
                   </div>
                 </div>
               </div>
@@ -204,7 +204,7 @@ export default function HorizontalScrollSection() {
 
             <div className="space-y-8">
               <h3 className="panel-title text-huge font-orbitron text-gradient-cyber">
-                REMEMBERED
+              The 1/1 Hall
               </h3>
 
               <div className="info-card cyber-card p-8 space-y-4">
@@ -272,7 +272,7 @@ export default function HorizontalScrollSection() {
             <div className="relative h-full flex items-center justify-center">
               <div className="panel-image image-container w-80 h-96 relative">
                 <Image
-                  src="/no1s/photo3.jpg"
+                  src="/no1s/photo2.jpg"
                   alt="Forgotten Entity"
                   fill
                   className="object-cover transition-all duration-700"
@@ -298,7 +298,7 @@ export default function HorizontalScrollSection() {
 
             <div className="space-y-8">
               <h3 className="panel-title text-huge font-orbitron text-gradient-cyber">
-                REMEMBERED
+              The 1/1 Hall
               </h3>
 
               <div className="info-card cyber-card p-8 space-y-4">
