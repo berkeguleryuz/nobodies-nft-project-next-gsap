@@ -37,7 +37,7 @@ export default function BridgeSection() {
 
         <div className="bridge-item">
           <Link
-            href="https://soneium.org/en/bridges/"
+            href="https://forms.gle/zVRDG6bekfNHqL6J7"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-cyber mt-12 px-12 py-6 text-large inline-block">
