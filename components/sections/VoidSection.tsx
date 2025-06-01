@@ -79,7 +79,7 @@ export default function VoidSection() {
 
         <div className="mt-16 void-text">
           <Link
-            href={"http://localhost:3000/the_void_chamber"}
+            href={"/the-void-chamber"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-5xl btn-cyber border p-4 rounded-lg transition-all duration-300 opacity-50 italic font-rajdhani text-white! cursor-pointer hover:text-black!">
