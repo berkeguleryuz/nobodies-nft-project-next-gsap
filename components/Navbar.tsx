@@ -65,7 +65,7 @@ const Navbar = () => {
                 <RiTwitterXLine size={24} />
               </Link>
               <div
-                onClick={() => toast.success("Coming Soon")}
+                onClick={() => toast.success("Discord Coming Soon")}
                 className="hover:opacity-50 transition-all duration-300 cursor-pointer">
                 <RiDiscordFill size={24} />
               </div>
