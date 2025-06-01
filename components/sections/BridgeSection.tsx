@@ -27,9 +27,12 @@ export default function BridgeSection() {
           <div className="absolute -bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] h-1 bg-black opacity-40" />
         </h2>
 
-        <p className="bridge-item text-2xl italic max-w-5xl mx-auto leading-relaxed text-dark-gray-force">
-          Bridge your funds to N1CHAIN and become part of the collective. Step
-          into the network where nobodies become everything.
+        <p className="bridge-item mt-4 text-2xl italic max-w-5xl mx-auto leading-relaxed text-dark-gray-force">
+          Before the world notices, before the whispers become echoes—there is
+          us. 
+        </p>
+        <p className="bridge-item mt-4 text-2xl italic max-w-5xl mx-auto leading-relaxed text-dark-gray-force">
+          The first. The unseen. The ones who knew before knowing.
         </p>
 
         <div className="bridge-item">
