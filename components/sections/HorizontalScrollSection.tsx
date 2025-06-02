@@ -121,8 +121,8 @@ export default function HorizontalScrollSection() {
                   Narb<span className="font-mono">|</span>N1
                 </h3>
 
-                <div className="info-card cyber-card p-8 space-y-4">
-                  <div className="flex items-center justify-between mb-3">
+                <div className="info-card cyber-card p-8 space-y-8">
+                  <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center space-x-2">
                       <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse" />
                       <span className="text-small font-orbitron uppercase tracking-wider text-black-force">
@@ -138,10 +138,6 @@ export default function HorizontalScrollSection() {
                       />
                     </div>
                   </div>
-
-                  <p className="text-sm leading-relaxed text-dark-gray-force">
-                    Co-founder and Dev
-                  </p>
 
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
@@ -228,8 +224,8 @@ export default function HorizontalScrollSection() {
                   Hunter<span className="font-mono">|</span>N1
                 </h3>
 
-                <div className="info-card cyber-card p-8 space-y-4">
-                  <div className="flex items-center justify-between mb-3">
+                <div className="info-card cyber-card p-8 space-y-8">
+                  <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center space-x-2">
                       <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse" />
                       <span className="text-small font-orbitron uppercase tracking-wider text-black-force">
@@ -245,10 +241,6 @@ export default function HorizontalScrollSection() {
                       />
                     </div>
                   </div>
-
-                  <p className="text-sm leading-relaxed text-dark-gray-force">
-                    Co-founder, collab and community manager
-                  </p>
 
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
@@ -335,8 +327,8 @@ export default function HorizontalScrollSection() {
                   ?????<span className="font-mono">|</span>N1
                 </h3>
 
-                <div className="info-card cyber-card p-8 space-y-4">
-                  <div className="flex items-center justify-between mb-3">
+                <div className="info-card cyber-card p-8 space-y-8">
+                  <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center space-x-2">
                       <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse" />
                       <span className="text-small font-orbitron uppercase tracking-wider text-black-force">
@@ -352,10 +344,6 @@ export default function HorizontalScrollSection() {
                       />
                     </div>
                   </div>
-
-                  <p className="text-sm leading-relaxed text-dark-gray-force">
-                    ?????
-                  </p>
 
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
@@ -442,8 +430,8 @@ export default function HorizontalScrollSection() {
                   ?????<span className="font-mono">|</span>N1
                 </h3>
 
-                <div className="info-card cyber-card p-8 space-y-4">
-                  <div className="flex items-center justify-between mb-3">
+                <div className="info-card cyber-card p-8 space-y-8">
+                  <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center space-x-2">
                       <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse" />
                       <span className="text-small font-orbitron uppercase tracking-wider text-black-force">
@@ -459,10 +447,6 @@ export default function HorizontalScrollSection() {
                       />
                     </div>
                   </div>
-
-                  <p className="text-sm leading-relaxed text-dark-gray-force">
-                    ?????????
-                  </p>
 
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
