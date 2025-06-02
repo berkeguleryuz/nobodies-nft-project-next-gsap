@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { CyberHex } from "@/components/SVGElements";
 import StarButton from "@/components/reusable/StarButton";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +47,7 @@ export default function StorySection() {
       <div className="max-w-6xl mx-auto mt-24">
         <div className="story-title text-center mb-16">
           <h2 className="text-large text-white font-bold mb-4 font-orbitron">
-            THE GENESIS OF NOBODIES
+            NOBODIES
           </h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
@@ -59,58 +60,29 @@ export default function StorySection() {
                 height={400}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/40" />
-              <div className="absolute bottom-4 left-4 right-4 p-4 bg-black/80 rounded-lg">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-2 h-2 bg-sky-500 rounded-full animate-pulse" />
-                  <span className="text-xs text-sky-300 font-raleway">
-                    Lorem ipsum dolor sit amet.
-                  </span>
-                </div>
-                <h3 className="font-bold font-iceland">Lorem, ipsum.</h3>
-                <p className="text-xs text-gray-400 font-raleway">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos, facere?
-                </p>
-              </div>
             </div>
           </div>
 
           <div className="story-cards space-y-12">
-            <div className="story-card p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-sky-500/30 hover:bg-gray-750 transition-colors duration-200">
+            <div className="story-card min-h-96 p-6 py-14 bg-gray-800 rounded-xl border border-gray-700 hover:border-sky-500/30 hover:bg-gray-750 transition-colors duration-200">
               <div className="flex items-start gap-4">
                 <CyberHex
                   size={24}
                   className="text-sky-400 mt-1 flex-shrink-0"
                 />
-                <div>
+                <div className="space-y-4">
                   <h3 className="text-xl font-bold text-white mb-3 font-iceland">
-                    Lorem ipsum dolor sit amet.
+                    NOBODIES is a collection of 2,424 digital shadows born from
+                    the void - faceless, nameless, but pulsing with untold
+                    potential.
                   </h3>
                   <p className="text-gray-300 leading-relaxed font-raleway">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Harum unde dolorem rerum alias distinctio sunt inventore
-                    pariatur nesciunt tempore ipsam.
+                    In a world obsessed with identity, we embrace the power of
+                    the unseen, where each NFT becomes a vessel for collective
+                    stories waiting to unfold.
                   </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="story-card p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-purple-500/30 hover:bg-gray-750 transition-colors duration-200">
-              <div className="flex items-start gap-4">
-                <CyberHex
-                  size={24}
-                  className="text-purple-400 mt-1 flex-shrink-0"
-                />
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-3 font-iceland">
-                    Lorem ipsum dolor sit amet.
-                  </h3>
-                  <p className="text-gray-300 leading-relaxed font-raleway">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Harum unde dolorem rerum alias distinctio sunt inventore
-                    pariatur nesciunt tempore ipsam.
-                  </p>
+                  <p>The forgotten are rising; </p>
+                  <p>will you stand among them when the void calls? ⚫️</p>
                 </div>
               </div>
             </div>
@@ -131,32 +103,26 @@ export default function StorySection() {
           <p className=" mt-16 text-orange-400 text-large font-iceland max-w-2xl mx-auto">
             Your key waits. Will you turn it?
           </p>
-          <div className="flex items-center justify-center mt-8">
+          <Link
+            href="/the-void"
+            className="flex items-center justify-center mt-8">
             <StarButton />
-          </div>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
           {[
             {
-              img: "/no1s/photo1.jpg",
-              title: "#01",
-              type: "Lorem ipsum dolor sit amet.",
+              img: "/no1s/photo7.jpg",
             },
             {
-              img: "/no1s/photo2.jpg",
-              title: "#02",
-              type: "Lorem ipsum dolor sit amet.",
+              img: "/no1s/photo6.jpg",
             },
             {
               img: "/no1s/photo3.jpg",
-              title: "#03",
-              type: "Lorem ipsum dolor sit amet.",
             },
             {
-              img: "/no1s/photo4.jpg",
-              title: "#04",
-              type: "Lorem ipsum dolor sit amet.",
+              img: "/no1s/photo1.jpg",
             },
           ].map((item, index) => (
             <div
@@ -165,7 +131,7 @@ export default function StorySection() {
               <div className="w-full h-48 bg-gray-800 relative overflow-hidden">
                 <Image
                   src={item.img}
-                  alt={item.title}
+                  alt={item.img}
                   width={300}
                   height={200}
                   className={`w-full h-full transition-all duration-300 ${
@@ -174,15 +140,6 @@ export default function StorySection() {
                       : "object-cover group-hover:brightness-110"
                   }`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-3 bg-black/80 backdrop-blur-sm group-hover:bg-black/90 transition-colors duration-300">
-                <span className="block text-xs text-orange-400 uppercase tracking-wider mb-1 font-raleway group-hover:text-orange-300 transition-colors duration-300">
-                  {item.type}
-                </span>
-                <h4 className="text-sm font-semibold text-white font-iceland group-hover:text-orange-100 transition-colors duration-300">
-                  {item.title}
-                </h4>
               </div>
             </div>
           ))}
