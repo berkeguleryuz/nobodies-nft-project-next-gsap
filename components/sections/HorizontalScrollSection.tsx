@@ -304,7 +304,7 @@ export default function HorizontalScrollSection() {
               <div className="relative h-full flex items-center justify-center">
                 <div className="panel-image image-container w-80 h-96 relative">
                   <Image
-                    src="/no1s/photo5.jpg"
+                    src="/no1s/photo8.jpg"
                     alt="Forgotten Entity"
                     fill
                     className="object-cover transition-all duration-700"
