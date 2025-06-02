@@ -471,9 +471,9 @@ export default function HorizontalScrollSection() {
                       </span>
                       <Link
                         target="_blank"
-                        href="https://x.com/berkeguleryuz"
+                        href="https://x.com/"
                         className="text-xs text-black-force">
-                        @berkeguleryuz
+                        undefined, yet
                       </Link>
                     </div>
                     <div className="w-full bg-black/20 rounded-full h-1.5">
